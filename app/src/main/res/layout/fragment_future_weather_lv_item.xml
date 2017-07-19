@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+   <TextView
+       android:id="@+id/tv_future_weather_lv_item_date"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="日期"
+       android:textColor="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/tv_future_weather_lv_item_wea_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_future_weather_lv_item_date"
+        android:layout_marginTop="6dp"
+        android:text="晴|雾霾"
+        android:textColor="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/tv_future_weather_lv_item_tem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="5摄氏度"
+        android:layout_marginTop="9dp"
+        android:textColor="@android:color/darker_gray"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

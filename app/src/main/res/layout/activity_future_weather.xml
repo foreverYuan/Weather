@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未来5-7天趋势预报"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="27sp"/>
+    <TextView
+        android:id="@+id/tv_activity_future_weather_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-01-11 -- 2016-01-17"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/tv_title"/>
+    <HorizontalScrollView
+        android:id="@+id/hs_activity_future_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/tv_activity_future_weather_period"
+        android:layout_above="@+id/btn_activity_future_weather_close"
+        android:scrollbars="none"/>
+    <Button
+        android:id="@+id/btn_activity_future_weather_close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/btn_weather_close"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
